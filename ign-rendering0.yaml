@@ -1,8 +1,12 @@
 repositories:
-  ign-cmake:
+  ign-cmake: # needed for ign_common and rendering
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
     version: default
+  ign-cmake0: # needed for ign-math4
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: ign-cmake0
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
