@@ -10,7 +10,7 @@ repositories:
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: ign-common1
+    version: ign-common1_colcon
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
