@@ -14,4 +14,4 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: win_fixes3
+    version: win_link
