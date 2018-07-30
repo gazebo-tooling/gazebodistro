@@ -6,7 +6,7 @@ repositories:
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: default
+    version: directories_separator
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
