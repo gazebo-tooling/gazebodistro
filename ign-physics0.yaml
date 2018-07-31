@@ -11,6 +11,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: default
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: default
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
