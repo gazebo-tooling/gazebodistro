@@ -1,0 +1,29 @@
+repositories:
+  gazebo:
+    type: hg
+    url: https://bitbucket.org/osrf/gazebo
+    version: gazebo9
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: ign-cmake0
+  ign-math:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: ign-math4
+  ign-msgs:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-msgs
+    version: ign-msgs1
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    version: ign-transport4
+  ign-tools:
+     type: hg
+     url: https://bitbucket.org/ignitionrobotics/ign-tools
+     version: default
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: sdf6
