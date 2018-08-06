@@ -1,0 +1,13 @@
+repositories:
+  gazebo:
+    type: hg
+    url: https://bitbucket.org/osrf/gazebo
+    version: gazebo7
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    version: ign-transport1
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: sdf4
