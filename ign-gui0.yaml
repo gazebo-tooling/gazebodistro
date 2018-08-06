@@ -14,7 +14,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs1
+    version: default
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
