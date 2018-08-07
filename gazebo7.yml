@@ -3,11 +3,16 @@ repositories:
     type: hg
     url: https://bitbucket.org/osrf/gazebo
     version: gazebo7
-  ign-transport:
+  ign-math:
     type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport1
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: ign-math2
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
     version: sdf4
+# The following library is optional
+#  ign-transport:
+#    type: hg
+#    url: https://bitbucket.org/ignitionrobotics/ign-transport
+#    version: ign-transport1
