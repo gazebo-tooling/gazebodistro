@@ -25,6 +25,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
     version: default
+  ign-rendering:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-rendering
+    version: default
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
