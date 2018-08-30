@@ -18,4 +18,4 @@ repositories:
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
-    version: gz11
+    version: default
