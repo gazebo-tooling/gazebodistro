@@ -3,10 +3,6 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
     version: gz11
-  ign-common:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: default
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
