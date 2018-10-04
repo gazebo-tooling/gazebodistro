@@ -8,21 +8,22 @@ repositories:
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: default
+    version: gz11
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
-    version: default
+    version: gz11
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: default
+    version: gz11
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     # TODO: use default when the issue with cmake is fixed:
     # https://bitbucket.org/ignitionrobotics/ign-transport/issues/94
-    version: no_cmd_test
+    # version: no_cmd_test
+    version: gz11
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
@@ -30,8 +31,8 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: default
+    version: gz11
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
-    version: sdf6
+    version: gz11
