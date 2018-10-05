@@ -1,0 +1,19 @@
+# gz11 version
+---
+repositories:
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: gz11
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: fix_win_compilation
+  ign-math:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: gz11
+  ign-rendering:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-rendering
+    version: gz11
