@@ -8,7 +8,7 @@ repositories:
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: gz11
+    version: fix_win_compilation
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
