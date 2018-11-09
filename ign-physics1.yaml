@@ -3,19 +3,19 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
     version: gz11
-  sdformat:
-    type: hg
-    url: https://bitbucket.org/osrf/sdformat
-    version: sdf8
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: gz11
-  ign-plugin:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-plugin
-    version: default
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
     version: default
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: default
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: sdf8
