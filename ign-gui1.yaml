@@ -17,6 +17,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
     version: gz11
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: ign-plugin1
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
@@ -26,7 +30,7 @@ repositories:
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: default
+    version: gz11
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
