@@ -4,11 +4,11 @@ repositories:
   ign-cmake:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
-    version: gz11_ogre_plugins
+    version: gz11
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: fix_win_compilation
+    version: gz11
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
@@ -30,7 +30,7 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: gz11_win_fixes
+    version: gz11
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
