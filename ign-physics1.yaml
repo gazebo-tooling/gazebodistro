@@ -1,12 +1,16 @@
 repositories:
-  ign-cmake:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-cmake
-    version: gz11
   dartsim:
     type: git
     url: https://github.com/dartsim/dart
     version: release-6.7
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: gz11
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: gz11
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
