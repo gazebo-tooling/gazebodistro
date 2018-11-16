@@ -13,6 +13,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: gz11
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: default
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
