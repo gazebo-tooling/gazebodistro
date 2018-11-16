@@ -1,4 +1,8 @@
 repositories:
+  dartsim:
+    type: git
+    url: https://github.com/dartsim/dart
+    version: release-6.7
   ign-cmake:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
