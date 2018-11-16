@@ -26,7 +26,7 @@ repositories:
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     # TODO: use default when the issue with cmake is fixed:
     # https://bitbucket.org/ignitionrobotics/ign-transport/issues/94
-    version: no_cmd_test_gz11
+    version: gz11_shorter_tests_name
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
