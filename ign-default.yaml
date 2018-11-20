@@ -1,0 +1,53 @@
+repositories:
+  ign-gazebo:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gazebo
+    version: default
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: gz11
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: gz11
+  ign-gui:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gui
+    version: gz11
+  ign-math:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: gz11
+  ign-msgs:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-msgs
+    version: gz11
+  ign-physics:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-physics
+    version: default
+  ign-rendering:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-rendering
+    version: gz11
+  ign-sensors:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-sensors
+    version: default
+  ign-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-tools
+    version: default
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    version: gz11
+  ogre:
+    type: git
+    url: https://github.com/OGRECave/ogre.git
+    version: v2-1
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: gz11
