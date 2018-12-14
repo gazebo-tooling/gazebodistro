@@ -30,7 +30,7 @@ repositories:
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: gz11
+    version: gz11_win_compilation
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
