@@ -20,7 +20,7 @@ repositories:
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
-    version: ign-plugin1
+    version: ign-plugin1_loadlib
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
