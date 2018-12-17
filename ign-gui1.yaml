@@ -34,7 +34,7 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: gz11
+    version: gz11_win_fixes
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
