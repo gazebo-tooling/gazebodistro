@@ -11,6 +11,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
     version: gz11
+  ign-fuel-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
+    version: default
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
