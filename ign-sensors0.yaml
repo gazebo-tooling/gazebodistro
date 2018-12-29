@@ -1,0 +1,45 @@
+# gz11 version
+---
+repositories:
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: gz11_fix_ogre_libs
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: gz11
+  ign-math:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: gz11
+  ign-msgs:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-msgs
+    version: gz11
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: ign-plugin1_deprecate_loadlibrary
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    # TODO: use default when the issue with cmake is fixed:
+    # https://bitbucket.org/ignitionrobotics/ign-transport/issues/94
+    version: gz11_shorter_tests_name
+  ign-gui:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gui
+    version: gz11_win_compilation_workaround
+  ign-rendering:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-rendering
+    version: gz11
+  ign-sensors:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-sensors
+    version: win_fixes
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: gz11
