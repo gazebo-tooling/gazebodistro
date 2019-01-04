@@ -11,6 +11,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
     version: gz11
+  ign-fuel-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
+    version: default
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
@@ -26,6 +30,10 @@ repositories:
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
+    version: default
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
     version: default
   ign-rendering:
     type: hg
@@ -43,10 +51,6 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     version: gz11
-  ogre:
-    type: git
-    url: https://github.com/OGRECave/ogre.git
-    version: v2-1
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
