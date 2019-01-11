@@ -20,7 +20,8 @@ repositories:
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     # TODO: use default when the issue with cmake is fixed:
     # https://bitbucket.org/ignitionrobotics/ign-transport/issues/94
-    version: no_cmd_test
+    # version: no_cmd_test
+    version: short_names_default
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
