@@ -55,3 +55,7 @@ repositories:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
     version: gz11
+  dart:
+    type: git
+    url: https://github.com/dartsim/dart
+    version: release-6.5
