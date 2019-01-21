@@ -58,4 +58,4 @@ repositories:
   dart:
     type: git
     url: https://github.com/dartsim/dart
-    version: release-6.5
+    version: v6.5.0
