@@ -55,7 +55,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
     version: gz11
-  dart:
-    type: git
-    url: https://github.com/dartsim/dart
-    version: v6.3.0
+
+# MSVC is unable to compile latest versions of DART. 2019 release
+# should fix the internal compiler problems.
+# dart:
+#  type: git
+#  url: https://github.com/dartsim/dart
+#  version: v6.3.0
