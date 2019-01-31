@@ -50,7 +50,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: gz11
+    version: gz11_no_cmd_win
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
