@@ -10,7 +10,7 @@ repositories:
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: ign-common2
+    version: ign-common3
   ign-fuel-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
@@ -26,7 +26,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs2
+    version: ign-msgs3
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
@@ -50,7 +50,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport5
+    version: ign-transport6
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
