@@ -54,4 +54,4 @@ repositories:
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
-    version: gz11   # needs release sdf8
+    version: sdf8
