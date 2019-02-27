@@ -2,16 +2,16 @@ repositories:
   ign-cmake:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
-    version: ogre_win_path
+    version: ign-cmake1
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: directories_separator
+    version: ign-common2
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
-    version: default
+    version: ign-math5
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: win_plugin_path
+    version: ign-rendering0
