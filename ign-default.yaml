@@ -26,7 +26,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: default
+    version: ign-msgs3
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
@@ -54,4 +54,4 @@ repositories:
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
-    version: gz11
+    version: sdf8
