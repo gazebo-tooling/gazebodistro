@@ -22,7 +22,7 @@ repositories:
    ign-launch:
       type: hg
       url: https://bitbucket.org/ignitionrobotics/ign-launch
-      version: ign-launch1
+      version: ign-launch0
    ign-math:
       type: hg
       url: https://bitbucket.org/ignitionrobotics/ign-math
