@@ -1,4 +1,4 @@
-# version 1
+# version 2
 ---
 repositories:
   ign-cmake:
@@ -28,7 +28,7 @@ repositories:
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: ign-gui1
+    version: default
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
