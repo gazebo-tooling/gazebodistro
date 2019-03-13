@@ -1,0 +1,43 @@
+# gz11 version
+---
+repositories:
+  ign-cmake:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    version: ign-cmake2
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: ign-common3
+  ign-math:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: ign-math6
+  ign-msgs:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-msgs
+    version: ign-msgs3
+  ign-plugin:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    version: ign-plugin1
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    version: ign-transport6
+  ign-gui:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gui
+    version: ign-gui1
+  ign-rendering:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-rendering
+    version: default
+  ign-sensors:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-sensors
+    version: default
+  sdformat:
+    type: hg
+    url: https://bitbucket.org/osrf/sdformat
+    version: sdf8
