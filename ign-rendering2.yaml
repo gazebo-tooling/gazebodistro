@@ -18,4 +18,4 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: merge_bump_2
+    version: default
