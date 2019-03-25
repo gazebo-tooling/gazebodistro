@@ -23,10 +23,6 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     version: ign-transport6
-  ign-gui:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: ign-gui1
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
