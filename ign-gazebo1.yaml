@@ -14,7 +14,7 @@ repositories:
   ign-gazebo:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gazebo
-    version: ign-gazebo1
+    version: ign-gazebo1_no_dart_win
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
@@ -26,7 +26,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs3
+    version: ign_msgs3_win_fixes_ign_tool
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
