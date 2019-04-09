@@ -14,7 +14,7 @@ repositories:
   ign-gazebo:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gazebo
-    version: ign-gazebo1
+    version: default
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
