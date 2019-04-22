@@ -26,7 +26,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: merge_default_ign_msgs3
+    version: default
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
