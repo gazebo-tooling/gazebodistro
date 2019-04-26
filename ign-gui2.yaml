@@ -1,4 +1,4 @@
-# version 1
+# version 2
 ---
 repositories:
   ign-cmake:
@@ -16,7 +16,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs3
+    version: default
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
@@ -24,12 +24,12 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport6
+    version: default
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: ign-gui1
+    version: default
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: ign-rendering1
+    version: default

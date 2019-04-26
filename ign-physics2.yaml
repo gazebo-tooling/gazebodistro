@@ -1,5 +1,6 @@
-# version 1
+# version 2
 ---
+
 repositories:
   ign-cmake:
     type: hg
@@ -13,23 +14,15 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: ign-math6
-  ign-msgs:
+  ign-physics:
     type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs3
+    url: https://bitbucket.org/ignitionrobotics/ign-physics
+    version: default
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
     version: ign-plugin1
-  ign-transport:
+  sdformat:
     type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport6
-  ign-gui:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: ign-gui1
-  ign-rendering:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: ign-rendering1
+    url: https://bitbucket.org/osrf/sdformat
+    version: sdf8

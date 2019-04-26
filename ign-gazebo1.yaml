@@ -1,8 +1,4 @@
 repositories:
-  ign-gazebo:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-gazebo
-    version: default
   ign-cmake:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
@@ -14,7 +10,11 @@ repositories:
   ign-fuel-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
-    version: default
+    version: ign-fuel-tools3
+  ign-gazebo:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gazebo
+    version: ign-gazebo1
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
@@ -46,7 +46,7 @@ repositories:
   ign-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-tools
-    version: default
+    version: ign-tools0
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
