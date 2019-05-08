@@ -19,10 +19,6 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
     version: ign-plugin1
-  ign-transport:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: default
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
@@ -30,6 +26,10 @@ repositories:
   ign-sensors:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-sensors
+    version: default
+  ign-transport:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-transport
     version: default
   sdformat:
     type: hg

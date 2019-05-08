@@ -1,6 +1,3 @@
-# version 2
----
-
 repositories:
   ign-cmake:
     type: hg
