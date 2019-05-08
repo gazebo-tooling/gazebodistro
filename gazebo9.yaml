@@ -7,6 +7,14 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
     version: ign-cmake0
+  ign-common:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-common
+    version: ign-common1_colcon
+  ign-fuel-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
+    version: ign-fuel-tools1
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
@@ -19,14 +27,6 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     version: ign-transport4
-  ign-fuel-tools:
-     type: hg
-     url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
-     version: ign-fuel-tools1
-  ign-common:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-common
-    version: ign-common1_colcon
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
