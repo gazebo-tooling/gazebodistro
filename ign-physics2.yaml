@@ -14,7 +14,7 @@ repositories:
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
-    version: ign-physics2
+    version: default
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
