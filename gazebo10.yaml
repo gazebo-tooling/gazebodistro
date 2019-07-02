@@ -6,7 +6,7 @@ repositories:
   ign-cmake:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-cmake
-    version: ign-cmake1
+    version: ign-cmake0
   ign-common:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
