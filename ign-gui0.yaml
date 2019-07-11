@@ -42,7 +42,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: workaround_ign_cmake_version
+    version: ign-transport5
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
