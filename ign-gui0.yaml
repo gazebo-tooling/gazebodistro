@@ -15,14 +15,18 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
     version: ign-gui0
-  ign-math:
+  ign-math5:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-math
+    version: ign-math5
+  ign-math6:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: ign-math6
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs2
+    version: msgs2_use_math6
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
@@ -30,7 +34,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport5
+    version: workaround_ign_cmake_version
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
