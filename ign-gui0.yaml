@@ -43,7 +43,3 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
     version: ign-transport5
-  sdformat:
-    type: hg
-    url: https://bitbucket.org/osrf/sdformat
-    version: sdf6
