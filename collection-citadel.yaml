@@ -50,12 +50,12 @@ repositories:
   ign-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-tools
-    version: ign-tools1
+    version: ign-tools0
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport8
+    version: ign-transport7
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
-    version: sdf9
+    version: sdf8
