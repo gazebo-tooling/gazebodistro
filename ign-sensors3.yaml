@@ -14,7 +14,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs4
+    version: default
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
@@ -30,7 +30,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport7
+    version: default
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
