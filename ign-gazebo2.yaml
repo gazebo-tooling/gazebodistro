@@ -10,7 +10,7 @@ repositories:
   ign-fuel-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
-    version: ign-fuel-tools3
+    version: ign-fuel-tools3_popen_pclose
   ign-gazebo:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gazebo
