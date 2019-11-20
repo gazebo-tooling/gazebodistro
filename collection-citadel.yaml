@@ -22,7 +22,7 @@ repositories:
   ign-launch:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-launch
-    version: bump_2.0.0
+    version: default
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
@@ -30,7 +30,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs4
+    version: default
   ign-physics:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-physics
@@ -54,7 +54,7 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport7
+    version: default
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
