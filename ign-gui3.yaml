@@ -30,7 +30,7 @@ repositories:
   ign-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-tools
-    version: ign-tools0
+    version: default
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
