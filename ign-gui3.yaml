@@ -34,4 +34,4 @@ repositories:
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: default
+    version: transport8_no_experimental
