@@ -7,6 +7,22 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-common
     version: ign-common3
+  ign-fuel-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
+    version: ign-fuel-tools3
+  ign-gazebo:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gazebo
+    version: default
+  ign-gui:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-gui
+    version: default
+  ign-launch:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-launch
+    version: default
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
@@ -15,6 +31,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
     version: default
+  ign-physics:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-physics
+    version: ign-physics1
   ign-plugin:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-plugin
@@ -27,6 +47,10 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-sensors
     version: default
+  ign-tools:
+    type: hg
+    url: https://bitbucket.org/ignitionrobotics/ign-tools
+    version: ign-tools0
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
