@@ -18,7 +18,7 @@ repositories:
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: default
+    version: ign-gui3
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
