@@ -14,7 +14,7 @@ repositories:
   ign-fuel-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-fuel-tools
-    version: ign-fuel-tools3
+    version: ign-fuel-tools4
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
@@ -22,11 +22,11 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs4
+    version: ign-msgs5
   ign-transport:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-transport
-    version: ign-transport7
+    version: ign-transport8
   sdformat:
     type: hg
     url: https://bitbucket.org/osrf/sdformat
