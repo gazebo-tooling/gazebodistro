@@ -14,11 +14,11 @@ repositories:
   ign-gazebo:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gazebo
-    version: default
+    version: ign-gazebo3
   ign-gui:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-gui
-    version: default
+    version: ign-gui3
   ign-math:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
