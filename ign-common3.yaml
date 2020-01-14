@@ -11,15 +11,3 @@ repositories:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: ign-math6
-  ign-physics:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-physics
-    version: ign-physics2
-  ign-plugin:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-plugin
-    version: ign-plugin1
-  sdformat:
-    type: hg
-    url: https://bitbucket.org/osrf/sdformat
-    version: sdf9
