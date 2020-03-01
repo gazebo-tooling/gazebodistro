@@ -22,7 +22,7 @@ repositories:
   ign-rendering:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-rendering
-    version: default
+    version: ign-rendering3_fixes_ogre112
   ign-sensors:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-sensors
