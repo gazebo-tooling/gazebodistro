@@ -18,7 +18,7 @@ repositories:
   ign-msgs:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-msgs
-    version: ign-msgs5
+    version: default
   ign-tools:
     type: hg
     url: https://bitbucket.org/ignitionrobotics/ign-tools
