@@ -8,8 +8,8 @@ repositories:
     url: https://bitbucket.org/ignitionrobotics/ign-math
     version: ign-math2
   sdformat:
-    type: hg
-    url: https://bitbucket.org/osrf/sdformat
+    type: git
+    url: https://github.com/osrf/sdformat
     version: sdf4
 # The following library is optional
 #  ign-transport:
