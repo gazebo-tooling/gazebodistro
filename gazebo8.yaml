@@ -4,16 +4,16 @@ repositories:
     url: https://bitbucket.org/osrf/gazebo
     version: gazebo8
   ign-math:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-math
+    type: git
+    url: https://github.com/ignitionrobotics/ign-math
     version: ign-math3
   ign-msgs:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-msgs
+    type: git
+    url: https://github.com/ignitionrobotics/ign-msgs
     version: ign-msgs0
   ign-transport:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-transport
+    type: git
+    url: https://github.com/ignitionrobotics/ign-transport
     version: ign-transport3
   sdformat:
     type: git
