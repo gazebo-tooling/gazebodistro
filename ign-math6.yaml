@@ -1,10 +1,10 @@
 repositories:
   ign-cmake:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
     version: ign-cmake2
   ign-math:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-math
+    type: git
+    url: https://github.com/ignitionrobotics/ign-math
     version: ign-math6
 

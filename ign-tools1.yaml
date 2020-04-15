@@ -1,5 +1,5 @@
 repositories:
   ign-tools:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-tools
+    type: git
+    url: https://github.com/ignitionrobotics/ign-tools
     version: ign-tools1

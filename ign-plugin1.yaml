@@ -1,9 +1,9 @@
 repositories:
   ign-cmake:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-cmake
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
     version: ign-cmake2
   ign-plugin:
-    type: hg
-    url: https://bitbucket.org/ignitionrobotics/ign-plugin
+    type: git
+    url: https://github.com/ignitionrobotics/ign-plugin
     version: ign-plugin1
