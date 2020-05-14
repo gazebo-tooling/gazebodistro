@@ -43,8 +43,11 @@ all_deps_pkgs=$(remove_string_dups "${all_deps_pkgs}")
 echo
 
 for new_pkg in ${all_deps_pkgs}; do
-    if [[ -n $(apt-cache madison ${new_pkg} | grep 'packages.osrfoundation.org') ]]; then
-	echo " 3. Found packages.osrfoundation.org package ${new_pkg}"
+    mad_output=$(apt-cache madison ${new_pkg})
+    # skip purely virtual
+    [[ ${mad_output} == "" ]] && continue
+    if [[ -z  $(grep 'packages.ros.org\|archive.ubuntu.com' <<< ${mad_output}) ]]; then
+	echo " 3. Found missing package ${new_pkg}"
 	osrf_pkgs="${osrf_pkgs} ${new_pkg}"
     fi
 done
