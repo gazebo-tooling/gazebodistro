@@ -13,7 +13,7 @@ remove_string_dups()
 }
 
 echo
-echo "This tool reads a gazebodistro file and look in the system for"
+echo "This tool reads a gazebodistro file and looks in the system for"
 echo "all available pkgs corresponding to that distro file"
 echo
 
