@@ -18,4 +18,4 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: ign-rendering3
+    version: win_test
