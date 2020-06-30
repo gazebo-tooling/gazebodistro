@@ -1,7 +1,7 @@
 repositories:
   gazebo:
-    type: hg
-    url: https://bitbucket.org/osrf/gazebo
+    type: git
+    url: https://github.com/osrf/gazebo
     version: gazebo9
   ign-cmake:
     type: git
