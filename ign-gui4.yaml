@@ -18,7 +18,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs6
+    version: master
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
