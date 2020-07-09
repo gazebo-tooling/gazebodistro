@@ -10,7 +10,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs5
+    version: master
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
