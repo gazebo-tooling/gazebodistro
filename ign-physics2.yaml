@@ -1,8 +1,8 @@
 repositories:
   dartsim:
     type: git
-    url: https://github.com/dartsim/dart.git
-    version: master
+    url: https://github.com/scpeters/dart.git
+    version: win_install_prefix
   ign-cmake:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
