@@ -10,7 +10,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: master
+    version: ign-msgs6
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
@@ -18,4 +18,4 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: master
+    version: ign-transport9
