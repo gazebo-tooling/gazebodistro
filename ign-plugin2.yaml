@@ -6,4 +6,4 @@ repositories:
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
-    version: master
+    version: main
