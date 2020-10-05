@@ -6,5 +6,5 @@ repositories:
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
-    version: master
+    version: main
 

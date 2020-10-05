@@ -6,7 +6,7 @@ repositories:
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
-    version: master
+    version: main
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
