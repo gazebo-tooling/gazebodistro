@@ -1,0 +1,27 @@
+name: Ignition Build 
+
+on: [push, pull_request]
+
+jobs:
+    focal-dome:
+      runs-on: ubuntu-latest
+      name: Ubuntu Focal - Dome
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Compile
+        id: ci
+        uses: ignition-tooling/action-ignition-ci@gazebodistro-focal
+        with:
+          collection-file: collection-edifice.yaml
+    focal-edifice:
+      runs-on: ubuntu-latest
+      name: Ubuntu Focal - Edifice
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Compile
+        id: ci
+        uses: ignition-tooling/action-ignition-ci@gazebodistro-focal
+        with:
+          collection-file: collection-edifice.yaml
