@@ -13,7 +13,7 @@ jobs:
         id: ci
         uses: ignition-tooling/action-ignition-ci@gazebodistro-focal
         with:
-          collection-file: collection-edifice.yaml
+          collection-file: collection-dome.yaml
     focal-edifice:
       runs-on: ubuntu-latest
       name: Ubuntu Focal - Edifice
