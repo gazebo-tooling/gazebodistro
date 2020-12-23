@@ -10,7 +10,7 @@ repositories:
   ign-fuel-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-fuel-tools
-    version: main
+    version: ign-fuel-tools6
   ign-gazebo:
     type: git
     url: https://github.com/ignitionrobotics/ign-gazebo
@@ -30,7 +30,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: main
+    version: ign-msgs7
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
