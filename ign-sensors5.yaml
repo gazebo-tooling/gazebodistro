@@ -26,11 +26,11 @@ repositories:
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: main
+    version: ign-sensors5
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport9
+    version: ign-transport10
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat

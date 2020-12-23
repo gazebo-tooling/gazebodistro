@@ -14,11 +14,11 @@ repositories:
   ign-gazebo:
     type: git
     url: https://github.com/ignitionrobotics/ign-gazebo
-    version: main
+    version: ign-gazebo5
   ign-gui:
     type: git
     url: https://github.com/ignitionrobotics/ign-gui
-    version: main
+    version: ign-gui5
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
@@ -42,7 +42,7 @@ repositories:
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: main
+    version: ign-sensors5
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
@@ -50,7 +50,7 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport9
+    version: ign-transport10
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat
