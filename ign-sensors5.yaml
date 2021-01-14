@@ -14,7 +14,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs6
+    version: main
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
@@ -30,8 +30,8 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport9
+    version: main
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat
-    version: sdf10
+    version: master
