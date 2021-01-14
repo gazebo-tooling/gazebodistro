@@ -30,7 +30,7 @@ repositories:
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
-    version: main
+    version: bump_edifice_sdformat
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
