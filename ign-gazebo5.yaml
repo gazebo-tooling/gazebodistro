@@ -42,7 +42,7 @@ repositories:
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: main
+    version: bump_edifice_sdformat
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
