@@ -30,7 +30,7 @@ repositories:
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
-    version: bump_edifice_sdformat
+    version: main
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
@@ -42,7 +42,7 @@ repositories:
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: bump_edifice_sdformat
+    version: main
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
