@@ -6,7 +6,7 @@ repositories:
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
-    version: ign-common3
+    version: main
   ign-gui:
     type: git
     url: https://github.com/ignitionrobotics/ign-gui
