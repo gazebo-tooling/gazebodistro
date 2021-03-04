@@ -1,0 +1,21 @@
+repositories:
+  ign-cmake:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
+    version: ign-cmake0
+  ign-math:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-math
+    version: ign-math4
+  ign-msgs:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-msgs
+    version: ign-msgs1
+  ign-tools:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-tools
+    version: ign-tools0
+  ign-transport:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-transport
+    version: ign-transport4
