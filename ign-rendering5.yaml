@@ -19,3 +19,7 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
     version: main
+  ign-utils:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-utils
+    version: main
