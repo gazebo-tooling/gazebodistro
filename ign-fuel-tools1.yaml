@@ -1,8 +1,4 @@
 repositories:
-  gazebo:
-    type: git
-    url: https://github.com/osrf/gazebo
-    version: gazebo9
   ign-cmake:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
@@ -23,11 +19,3 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
     version: ign-msgs1
-  ign-transport:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport4
-  sdformat:
-    type: git
-    url: https://github.com/osrf/sdformat
-    version: sdf6
