@@ -1,0 +1,7 @@
+{
+  "build": {
+    "ign-default": {
+      "cmake-args": ["-DSKIP_optix=true"]
+    }
+  }
+}
