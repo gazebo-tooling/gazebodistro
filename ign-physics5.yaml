@@ -11,30 +11,14 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
     version: ign-math6
-  ign-msgs:
+  ign-physics:
     type: git
-    url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs7
+    url: https://github.com/ignitionrobotics/ign-physics
+    version: main
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
     version: ign-plugin1
-  ign-rendering:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-rendering
-    version: ign-rendering5
-  ign-sensors:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-sensors
-    version: ign-sensors5
-  ign-transport:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport10
-  ign-tools:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-tools
-    version: ign-tools1
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
@@ -42,4 +26,4 @@ repositories:
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat
-    version: sdf11
+    version: main
