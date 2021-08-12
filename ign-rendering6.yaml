@@ -18,7 +18,7 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: main
+    version: ahcorde/update/ogre2.2
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
