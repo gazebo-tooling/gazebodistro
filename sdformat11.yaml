@@ -7,15 +7,15 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
     version: ign-math6
-  ign-msgs:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs6
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
     version: ign-tools1
-  ign-transport:
+  ign-utils:
     type: git
-    url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport9
+    url: https://github.com/ignitionrobotics/ign-utils
+    version: main
+  sdformat:
+    type: git
+    url: https://github.com/osrf/sdformat
+    version: master

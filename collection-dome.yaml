@@ -10,19 +10,19 @@ repositories:
   ign-fuel-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-fuel-tools
-    version: ign-fuel-tools4
+    version: ign-fuel-tools5
   ign-gazebo:
     type: git
     url: https://github.com/ignitionrobotics/ign-gazebo
-    version: master
+    version: ign-gazebo4
   ign-gui:
     type: git
     url: https://github.com/ignitionrobotics/ign-gui
-    version: master
+    version: ign-gui4
   ign-launch:
     type: git
     url: https://github.com/ignitionrobotics/ign-launch
-    version: master
+    version: ign-launch3
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
@@ -30,11 +30,11 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: ign-msgs5
+    version: ign-msgs6
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
-    version: ign-physics2
+    version: ign-physics3
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
@@ -42,11 +42,11 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: master
+    version: ign-rendering4
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
-    version: master
+    version: ign-sensors4
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
@@ -54,8 +54,8 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport8
+    version: ign-transport9
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat
-    version: sdf9
+    version: sdf10
