@@ -1,6 +1,6 @@
+---
 repositories:
   ign-cmake:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
     version: ign-cmake2
-

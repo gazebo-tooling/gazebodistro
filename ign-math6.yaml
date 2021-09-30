@@ -1,3 +1,4 @@
+---
 repositories:
   ign-cmake:
     type: git
@@ -7,4 +8,3 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
     version: ign-math6
-

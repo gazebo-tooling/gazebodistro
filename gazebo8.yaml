@@ -1,3 +1,4 @@
+---
 repositories:
   gazebo:
     type: git
