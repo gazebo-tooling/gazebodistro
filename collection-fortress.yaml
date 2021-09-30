@@ -23,7 +23,7 @@ repositories:
   ign-launch:
     type: git
     url: https://github.com/ignitionrobotics/ign-launch
-    version: main
+    version: ign-launch5
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
