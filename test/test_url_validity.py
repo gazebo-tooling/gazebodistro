@@ -27,8 +27,6 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-#from . import hook_permissions
-
 from io import StringIO
 import os
 import re
@@ -46,9 +44,6 @@ import unidiff
 import yaml
 from yaml.composer import Composer
 from yaml.constructor import Constructor
-
-# for commented debugging code below
-# import pprint
 
 UPSTREAM_NAME = 'unittest_upstream_comparision'
 DIFF_BRANCH = 'master'
@@ -155,10 +150,11 @@ def main():
     diffed_lines = detect_lines(diff)
 
     for path, lines in diffed_lines.items():
-        # Skip anything in subdirectories
+        # Skip anything that isn't YAML
         if path.find('.yaml') < 0:
             continue
 
+        # Skip anything in the github subdirectory
         if path.find('.github') >= 0:
             continue
 
@@ -173,6 +169,7 @@ def main():
             (branch_exists, message) = check_git_branch_exists(r['url'], r['version'])
 
             if not branch_exists:
+                # https://docs.github.com/en/actions/learn-github-actions/workflow-commands-for-github-actions#setting-an-error-message
                 val = f"::error file={path},line={line},title=Invalid Repo::{message}"
                 detected_errors.extend([val])
     return detected_errors
