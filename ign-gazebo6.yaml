@@ -31,7 +31,7 @@ repositories:
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
-    version: main
+    version: ign-physics5
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
