@@ -39,7 +39,7 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: main
+    version: ign-rendering6
   ign-sensors:
     type: git
     url: https://github.com/ignitionrobotics/ign-sensors
