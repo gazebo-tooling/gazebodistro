@@ -27,7 +27,7 @@ repositories:
   ign-msgs:
     type: git
     url: https://github.com/ignitionrobotics/ign-msgs
-    version: main
+    version: ign-msgs8
   ign-physics:
     type: git
     url: https://github.com/ignitionrobotics/ign-physics
