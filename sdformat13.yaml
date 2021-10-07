@@ -1,0 +1,22 @@
+---
+repositories:
+  ign-cmake:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
+    version: ign-cmake2
+  ign-math:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-math
+    version: ign-math6
+  ign-tools:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-tools
+    version: ign-tools1
+  ign-utils:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-utils
+    version: ign-utils1
+  sdformat:
+    type: git
+    url: https://github.com/osrf/sdformat
+    version: main
