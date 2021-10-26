@@ -2,8 +2,8 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
-    version: ign-cmake2
+    url: https://github.com/traversaro/ign-cmake
+    version: patch-6
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
