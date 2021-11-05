@@ -15,7 +15,7 @@ repositories:
   ign-gazebo:
     type: git
     url: https://github.com/ignitionrobotics/ign-gazebo
-    version: main
+    version: blast545/protobuf_transport
   ign-gui:
     type: git
     url: https://github.com/ignitionrobotics/ign-gui
@@ -51,7 +51,7 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: blast545/protobuf_transport
+    version: ign-transport11
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
