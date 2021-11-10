@@ -27,7 +27,7 @@ repositories:
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
-    version: ign-rendering6
+    version: main
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
