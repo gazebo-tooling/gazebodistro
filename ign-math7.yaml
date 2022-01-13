@@ -4,11 +4,11 @@ repositories:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
     version: ign-cmake2
-  ign-utils:
-    type: git
-    url: https://github.com/ignitionrobotics/ign-utils
-    version: ign-utils1
   ign-math:
     type: git
     url: https://github.com/ignitionrobotics/ign-math
     version: main
+  ign-utils:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-utils
+    version: ign-utils1
