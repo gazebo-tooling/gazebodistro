@@ -2,8 +2,8 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
-    version: ign-cmake2
+    url: https://github.com/Bi0T1N/ign-cmake
+    version: find_python3
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
