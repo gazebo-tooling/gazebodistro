@@ -23,4 +23,4 @@ repositories:
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
-    version: ign-utils1
+    version: main
