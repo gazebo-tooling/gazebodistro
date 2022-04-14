@@ -1,9 +1,9 @@
 ---
 repositories:
-  ign-cmake2:
+  main:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
-    version: ign-cmake2
+    version: main
   ign-cmake:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
@@ -35,7 +35,7 @@ repositories:
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
-    version: ign-tools1
+    version: main
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
