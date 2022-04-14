@@ -1,9 +1,13 @@
 ---
 repositories:
-  ign-cmake:
+  ign-cmake2:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
     version: ign-cmake2
+  ign-cmake:
+    type: git
+    url: https://github.com/ignitionrobotics/ign-cmake
+    version: main
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
@@ -39,7 +43,7 @@ repositories:
   ign-plugin:
     type: git
     url: https://github.com/ignitionrobotics/ign-plugin
-    version: ign-plugin1
+    version: main
   ign-rendering:
     type: git
     url: https://github.com/ignitionrobotics/ign-rendering
@@ -59,7 +63,7 @@ repositories:
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
-    version: ign-utils1
+    version: main
   sdformat:
     type: git
     url: https://github.com/osrf/sdformat
