@@ -3,7 +3,7 @@ repositories:
   ign-cmake:
     type: git
     url: https://github.com/ignitionrobotics/ign-cmake
-    version: ign-cmake2
+    version: main
   ign-common:
     type: git
     url: https://github.com/ignitionrobotics/ign-common
@@ -23,7 +23,7 @@ repositories:
   ign-tools:
     type: git
     url: https://github.com/ignitionrobotics/ign-tools
-    version: ign-tools1
+    version: main
   ign-utils:
     type: git
     url: https://github.com/ignitionrobotics/ign-utils
