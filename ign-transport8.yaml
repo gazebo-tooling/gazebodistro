@@ -19,4 +19,4 @@ repositories:
   ign-transport:
     type: git
     url: https://github.com/ignitionrobotics/ign-transport
-    version: ign-transport8
+    version: blast545/protobuf_warnings
