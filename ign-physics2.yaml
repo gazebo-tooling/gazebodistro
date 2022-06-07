@@ -1,22 +1,22 @@
 ---
 repositories:
-  ign-cmake:
+  gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
     version: ign-cmake2
-  ign-common:
+  gz-common:
     type: git
     url: https://github.com/gazebosim/gz-common
     version: ign-common3
-  ign-math:
+  gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
     version: ign-math6
-  ign-physics:
+  gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
     version: ign-physics2
-  ign-plugin:
+  gz-plugin:
     type: git
     url: https://github.com/gazebosim/gz-plugin
     version: ign-plugin1
