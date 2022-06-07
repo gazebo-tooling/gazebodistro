@@ -1,6 +1,4 @@
 ---
-# gz11 version
----
 repositories:
   ign-cmake:
     type: git
