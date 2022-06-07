@@ -2,25 +2,25 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
+    url: https://github.com/gazebosim/gz-cmake
     version: ign-cmake2
   ign-common:
     type: git
-    url: https://github.com/ignitionrobotics/ign-common
+    url: https://github.com/gazebosim/gz-common
     version: ign-common3
   ign-math:
     type: git
-    url: https://github.com/ignitionrobotics/ign-math
+    url: https://github.com/gazebosim/gz-math
     version: ign-math6
   ign-physics:
     type: git
-    url: https://github.com/ignitionrobotics/ign-physics
+    url: https://github.com/gazebosim/gz-physics
     version: ign-physics3
   ign-plugin:
     type: git
-    url: https://github.com/ignitionrobotics/ign-plugin
+    url: https://github.com/gazebosim/gz-plugin
     version: ign-plugin1
   sdformat:
     type: git
-    url: https://github.com/osrf/sdformat
+    url: https://github.com/gazebosim/sdformat
     version: sdf10

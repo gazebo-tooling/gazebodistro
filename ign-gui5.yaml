@@ -2,41 +2,41 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
+    url: https://github.com/gazebosim/gz-cmake
     version: ign-cmake2
   ign-common:
     type: git
-    url: https://github.com/ignitionrobotics/ign-common
+    url: https://github.com/gazebosim/gz-common
     version: ign-common4
   ign-gui:
     type: git
-    url: https://github.com/ignitionrobotics/ign-gui
+    url: https://github.com/gazebosim/gz-gui
     version: ign-gui5
   ign-math:
     type: git
-    url: https://github.com/ignitionrobotics/ign-math
+    url: https://github.com/gazebosim/gz-math
     version: ign-math6
   ign-msgs:
     type: git
-    url: https://github.com/ignitionrobotics/ign-msgs
+    url: https://github.com/gazebosim/gz-msgs
     version: ign-msgs7
   ign-plugin:
     type: git
-    url: https://github.com/ignitionrobotics/ign-plugin
+    url: https://github.com/gazebosim/gz-plugin
     version: ign-plugin1
   ign-rendering:
     type: git
-    url: https://github.com/ignitionrobotics/ign-rendering
+    url: https://github.com/gazebosim/gz-rendering
     version: ign-rendering5
   ign-tools:
     type: git
-    url: https://github.com/ignitionrobotics/ign-tools
+    url: https://github.com/gazebosim/gz-tools
     version: ign-tools1
   ign-transport:
     type: git
-    url: https://github.com/ignitionrobotics/ign-transport
+    url: https://github.com/gazebosim/gz-transport
     version: ign-transport10
   ign-utils:
     type: git
-    url: https://github.com/ignitionrobotics/ign-utils
+    url: https://github.com/gazebosim/gz-utils
     version: ign-utils1

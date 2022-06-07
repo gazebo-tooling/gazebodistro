@@ -47,7 +47,7 @@ from yaml.constructor import Constructor
 
 UPSTREAM_NAME = 'unittest_upstream_comparision'
 DIFF_BRANCH = 'master'
-DIFF_REPO = 'https://github.com/ignition-tooling/gazebodistro.git'
+DIFF_REPO = 'https://github.com/gazebo-tooling/gazebodistro.git'
 
 def check_git_branch_exists(url, branch_name):
     cmd = ('git ls-remote %s refs/heads/*' % url).split()
