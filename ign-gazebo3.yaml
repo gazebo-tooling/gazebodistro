@@ -2,57 +2,57 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
+    url: https://github.com/gazebosim/gz-cmake
     version: ign-cmake2
   ign-common:
     type: git
-    url: https://github.com/ignitionrobotics/ign-common
+    url: https://github.com/gazebosim/gz-common
     version: ign-common3
   ign-fuel-tools:
     type: git
-    url: https://github.com/ignitionrobotics/ign-fuel-tools
+    url: https://github.com/gazebosim/gz-fuel-tools
     version: ign-fuel-tools4
   ign-gazebo:
     type: git
-    url: https://github.com/ignitionrobotics/ign-gazebo
+    url: https://github.com/gazebosim/gz-sim
     version: ign-gazebo3
   ign-gui:
     type: git
-    url: https://github.com/ignitionrobotics/ign-gui
+    url: https://github.com/gazebosim/gz-gui
     version: ign-gui3
   ign-math:
     type: git
-    url: https://github.com/ignitionrobotics/ign-math
+    url: https://github.com/gazebosim/gz-math
     version: ign-math6
   ign-msgs:
     type: git
-    url: https://github.com/ignitionrobotics/ign-msgs
+    url: https://github.com/gazebosim/gz-msgs
     version: ign-msgs5
   ign-physics:
     type: git
-    url: https://github.com/ignitionrobotics/ign-physics
+    url: https://github.com/gazebosim/gz-physics
     version: ign-physics2
   ign-plugin:
     type: git
-    url: https://github.com/ignitionrobotics/ign-plugin
+    url: https://github.com/gazebosim/gz-plugin
     version: ign-plugin1
   ign-rendering:
     type: git
-    url: https://github.com/ignitionrobotics/ign-rendering
+    url: https://github.com/gazebosim/gz-rendering
     version: ign-rendering3
   ign-sensors:
     type: git
-    url: https://github.com/ignitionrobotics/ign-sensors
+    url: https://github.com/gazebosim/gz-sensors
     version: ign-sensors3
   ign-tools:
     type: git
-    url: https://github.com/ignitionrobotics/ign-tools
+    url: https://github.com/gazebosim/gz-tools
     version: ign-tools1
   ign-transport:
     type: git
-    url: https://github.com/ignitionrobotics/ign-transport
+    url: https://github.com/gazebosim/gz-transport
     version: ign-transport8
   sdformat:
     type: git
-    url: https://github.com/osrf/sdformat
+    url: https://github.com/gazebosim/sdformat
     version: sdf9

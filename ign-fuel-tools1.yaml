@@ -2,21 +2,21 @@
 repositories:
   ign-cmake:
     type: git
-    url: https://github.com/ignitionrobotics/ign-cmake
+    url: https://github.com/gazebosim/gz-cmake
     version: ign-cmake0
   ign-common:
     type: git
-    url: https://github.com/ignitionrobotics/ign-common
+    url: https://github.com/gazebosim/gz-common
     version: ign-common1
   ign-fuel-tools:
     type: git
-    url: https://github.com/ignitionrobotics/ign-fuel-tools
+    url: https://github.com/gazebosim/gz-fuel-tools
     version: ign-fuel-tools1
   ign-math:
     type: git
-    url: https://github.com/ignitionrobotics/ign-math
+    url: https://github.com/gazebosim/gz-math
     version: ign-math4
   ign-msgs:
     type: git
-    url: https://github.com/ignitionrobotics/ign-msgs
+    url: https://github.com/gazebosim/gz-msgs
     version: ign-msgs1
