@@ -3,44 +3,44 @@ repositories:
   ign-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: main
+    version: gz_cmake_project
   ign-common:
     type: git
     url: https://github.com/gazebosim/gz-common
-    version: main
+    version: gz_cmake_project
   ign-math:
     type: git
     url: https://github.com/gazebosim/gz-math
-    version: main
+    version: gz_cmake_project
   ign-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
-    version: main
+    version: gz_cmake_project
   ign-plugin:
     type: git
     url: https://github.com/gazebosim/gz-plugin
-    version: main
+    version: gz_cmake_project
   ign-rendering:
     type: git
     url: https://github.com/gazebosim/gz-rendering
-    version: main
+    version: gz_cmake_project
   ign-sensors:
     type: git
     url: https://github.com/gazebosim/gz-sensors
-    version: main
+    version: gz_cmake_project
   ign-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
-    version: main
+    version: gz_cmake_project
   ign-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
-    version: main
+    version: gz_cmake_project
   ign-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
-    version: main
+    version: gz_cmake_project
   sdformat:
     type: git
     url: https://github.com/gazebosim/sdformat
-    version: main
+    version: gz_cmake_project
