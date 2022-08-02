@@ -1,6 +1,6 @@
 ---
 repositories:
-  ign-cmake:
+  gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake3
+    version: main
