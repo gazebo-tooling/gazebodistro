@@ -1,22 +1,22 @@
 ---
 repositories:
-  ign-cmake:
+  gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
     version: gz-cmake3
-  ign-math:
+  gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
     version: main
-  ign-msgs:
+  gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
     version: main
-  ign-tools:
+  gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
     version: ign-tools1
-  ign-utils:
+  gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
     version: main

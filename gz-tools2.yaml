@@ -1,10 +1,10 @@
 ---
 repositories:
-  ign-cmake:
+  gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
     version: gz-cmake3
-  ign-tools:
+  gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
     version: gz-tools2
