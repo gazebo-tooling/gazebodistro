@@ -47,7 +47,7 @@ repositories:
   ign-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
-    version: main
+    version: gz-tools2
   ign-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
