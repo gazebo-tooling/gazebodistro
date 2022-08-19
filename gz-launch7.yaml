@@ -22,8 +22,8 @@ repositories:
     version: gz-gui7
   gz-launch:
     type: git
-    url: https://github.com/Crola1702/gz-launch
-    version: fix-CmakeLists_2022-08-17
+    url: https://github.com/gazebosim/gz-launch
+    version: blast545/fix_cmakelists_aug_2022
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
