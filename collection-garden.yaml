@@ -3,7 +3,7 @@ repositories:
   gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake3
+    version: mjcarroll/windows
   gz-common:
     type: git
     url: https://github.com/gazebosim/gz-common
@@ -27,7 +27,7 @@ repositories:
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
-    version: gz-math7
+    version: mjcarroll/examples_from_cmake
   gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs

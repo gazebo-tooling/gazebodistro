@@ -1,0 +1,34 @@
+name: base
+
+channels:
+  - conda-forge
+
+dependencies:
+  - anaconda-client
+  - cmake
+  - colcon-common-extensions
+  - compilers
+  - cppzmq
+  - curl
+  - eigen
+  - ffmpeg
+  - freeimage
+  - gdal
+  - git
+  - glib
+  - gts
+  - jsoncpp
+  - libzip
+  - make
+  - ninja
+  - ogre
+  - pkg-config
+  - protobuf
+  - pybind11
+  - qt
+  - ruby
+  - tinyxml
+  - tinyxml2
+  - urdfdom
+  - vcstool
+  - zeromq

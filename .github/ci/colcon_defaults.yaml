@@ -1,0 +1,33 @@
+{
+  "build": {
+    "merge-install": true,
+    "event-handlers": [
+      "console_package_list+",
+      "console_cohesion+",
+      "console_start_end-",
+      "actions_start_end+",
+    ],
+    "cmake-args": [
+      "--no-warn-unused-cli",
+      "-GNinja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_C_COMPILER_LAUNCHER=buildcache",
+      "-DCMAKE_CXX_COMPILER_LAUNCHER=buildcache",
+      "-DBUILD_DOCS:BOOL=OFF",
+      "-DSKIP_optix:BOOL=ON",
+      "-DSKIP_SWIG:BOOL=ON",
+      "-DSKIP_PYBIND11:BOOL=ON",
+      "-DUSE_GZ_RECOMMENDED_MSVC_CACHING:BOOL=ON",
+    ],
+    "executor": "sequential",
+  },
+  "test": {
+    "merge-install": true,
+    "event-handlers": [
+      "console_cohesion+",
+      "console_start_end-",
+      "actions_start_end+",
+    ],
+    "executor": "sequential",
+  }
+}
