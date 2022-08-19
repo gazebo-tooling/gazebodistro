@@ -118,15 +118,15 @@ jobs:
       if: contains(matrix.os, 'ubuntu')
       shell: bash -l {0}
       run: |
-        echo "CC=x86_64-conda-linux-gnu-gcc" >> $GITHUB_ENV
-        echo "CXX=x86_64-conda-linux-gnu-g++" >> $GITHUB_ENV
+        echo "BUILDCACHE_CC=x86_64-conda-linux-gnu-gcc" >> $GITHUB_ENV
+        echo "BUILDCACHE_CXX=x86_64-conda-linux-gnu-g++" >> $GITHUB_ENV
 
     - name: Export compiler variables [macOS]
       if: contains(matrix.os, 'macos')
       shell: bash -l {0}
       run: |
-        echo "CC=x86_64-apple-darwin13.4.0-clang" >> $GITHUB_ENV
-        echo "CXX=x86_64-apple-darwin13.4.0-clang++" >> $GITHUB_ENV
+        echo "BUILDCACHE_CC=x86_64-apple-darwin13.4.0-clang" >> $GITHUB_ENV
+        echo "BUILDCACHE_CXX=x86_64-apple-darwin13.4.0-clang++" >> $GITHUB_ENV
 
     - name: Checkout Workspace [Linux&macOS]
       if: contains(matrix.os, 'macos') || contains(matrix.os, 'ubuntu')
@@ -141,6 +141,8 @@ jobs:
       if: (contains(matrix.os, 'macos') || contains(matrix.os, 'ubuntu')) && success()
       shell: bash -l {0}
       run: |
+        export CC=${{ env.BUILDCACHE_CC }}
+        export CXX=${{ env.BUILDCACHE_CXX }}
         cd workspace
         echo "::group::Workspace Branches"
         vcs branch
@@ -151,6 +153,8 @@ jobs:
       if: (contains(matrix.os, 'macos') || contains(matrix.os, 'ubuntu')) && success()
       shell: bash -l {0}
       run: |
+        export CC=${{ env.BUILDCACHE_CC }}
+        export CXX=${{ env.BUILDCACHE_CXX }}
         cd workspace
         colcon test ${{ env.COLCON_TEST_ARGS }}
 
