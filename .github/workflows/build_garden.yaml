@@ -36,8 +36,8 @@ jobs:
     env:
       # Workspace file to use for the build
       VCS_WORKSPACE_FILE: collection-garden.yaml
-      COLCON_BUILD_ARGS: "--packages-up-to gz-common5" 
-      COLCON_TEST_ARGS: "--packages-up-to gz-common5" 
+      COLCON_BUILD_ARGS: "--packages-up-to gz-rendering6" 
+      COLCON_TEST_ARGS: "--packages-up-to gz-rendering6" 
 
       # Things that control build
       COLCON_DEFAULTS_FILE: ${{ github.workspace }}/.github/ci/colcon_defaults.yaml
