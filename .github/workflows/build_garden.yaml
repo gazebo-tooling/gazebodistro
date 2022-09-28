@@ -36,8 +36,8 @@ jobs:
     env:
       # Workspace file to use for the build
       VCS_WORKSPACE_FILE: collection-garden.yaml
-      COLCON_BUILD_ARGS: "--packages-up-to gz-common5" 
-      COLCON_TEST_ARGS: "--packages-up-to gz-common5" 
+      COLCON_BUILD_ARGS: "--packages-up-to sdformat13" 
+      COLCON_TEST_ARGS: "--packages-up-to sdformat13" 
 
       # Things that control build
       COLCON_DEFAULTS_FILE: ${{ github.workspace }}/.github/ci/colcon_defaults.yaml
@@ -157,6 +157,7 @@ jobs:
         export CXX=${{ env.BUILDCACHE_CXX }}
         cd workspace
         colcon test ${{ env.COLCON_TEST_ARGS }}
+        colcon test-result
 
     - name: Checkout Workspace [Windows]
       if: contains(matrix.os, 'windows')
@@ -180,3 +181,4 @@ jobs:
       run: |
         cd workspace
         colcon test ${{ env.COLCON_TEST_ARGS }}
+        colcon test-result
