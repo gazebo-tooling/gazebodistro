@@ -11,7 +11,7 @@ repositories:
   gz-fuel-tools:
     type: git
     url: https://github.com/gazebosim/gz-fuel-tools
-    version: gz-fuel-tools8
+    version: main
   gz-sim:
     type: git
     url: https://github.com/gazebosim/gz-sim
@@ -55,7 +55,7 @@ repositories:
   gz-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
-    version: gz-transport12
+    version: main
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
