@@ -3,7 +3,7 @@ repositories:
   gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake3
+    version: jrivero/fix_benchmark_windows
   gz-common:
     type: git
     url: https://github.com/gazebosim/gz-common
