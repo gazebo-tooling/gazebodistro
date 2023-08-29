@@ -19,7 +19,7 @@ repositories:
   gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
-    version: main
+    version: gz-msgs10
   gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
