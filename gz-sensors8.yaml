@@ -27,11 +27,11 @@ repositories:
   gz-sensors:
     type: git
     url: https://github.com/gazebosim/gz-sensors
-    version: main
+    version: gz-sensors8
   gz-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
-    version: main
+    version: gz-transport13
   gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
