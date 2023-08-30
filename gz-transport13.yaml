@@ -19,7 +19,7 @@ repositories:
   gz-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
-    version: main
+    version: gz-transport13
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
