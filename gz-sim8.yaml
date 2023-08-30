@@ -19,7 +19,7 @@ repositories:
   gz-gui:
     type: git
     url: https://github.com/gazebosim/gz-gui
-    version: main
+    version: gz-gui8
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
@@ -31,7 +31,7 @@ repositories:
   gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
-    version: main
+    version: gz-physics7
   gz-plugin:
     type: git
     url: https://github.com/gazebosim/gz-plugin
