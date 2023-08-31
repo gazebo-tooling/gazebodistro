@@ -27,7 +27,7 @@ repositories:
   gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
-    version: gz-msgs10
+    version: mjcarroll/dllexport_decl
   gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
