@@ -7,7 +7,7 @@ repositories:
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
-    version: gz-math7
+    version: main
   gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
