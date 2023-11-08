@@ -13,5 +13,5 @@ jobs:
         with:
           pixi-version: v0.6.0
           cache: true
-      - run: pixi run sync gz-math8.yaml
+      - run: pixi run sync gz-common6.yaml
       - run: pixi run build
