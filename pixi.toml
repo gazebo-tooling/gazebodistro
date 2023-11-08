@@ -11,10 +11,19 @@ sync = {cmd = "mkdir src && vcs import src --input "}
 colcon = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon"}
 build = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon build"}
 test = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon test"}
+clean = {cmd = "rm -rf build install log"}
 
 [dependencies]
+eigen = "3.4.0.*"
+python = "3.11.*"
 
-[host-dependencies]
+[build-dependencies]
+ninja = "1.11.1.*"
+cmake = "3.27.6.*"
+make = "4.3.*"
+pkg-config = "0.29.2.*"
+pybind11 = "2.11.1.*"
 git = "2.42.0.*"
 vcstool = "0.3.0.*"
 colcon-common-extensions = "0.3.0.*"
+swig = "4.1.1.*"
