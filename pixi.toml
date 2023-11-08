@@ -1,0 +1,20 @@
+[project]
+name = "gazebodistro"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Michael Carroll <mjcarroll@intrinsic.ai>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64"]
+
+[tasks]
+sync = {cmd = "mkdir src && vcs import src --input "}
+colcon = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon"}
+build = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon build"}
+test = {cmd = "COLCON_DEFAULTS_FILE=.github/ci/colcon_defaults.yaml colcon test"}
+
+[dependencies]
+
+[host-dependencies]
+git = "2.42.0.*"
+vcstool = "0.3.0.*"
+colcon-common-extensions = "0.3.0.*"

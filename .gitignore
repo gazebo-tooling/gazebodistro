@@ -1,1 +1,7 @@
 *.pyc
+
+.pixi
+build
+log
+install
+src

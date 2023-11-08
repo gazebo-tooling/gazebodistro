@@ -1,0 +1,17 @@
+name: Pixi-based CI
+on: [push, pull_request]
+
+jobs:
+  default:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: prefix-dev/setup-pixi@v0.3.0
+        with:
+          pixi-version: v0.6.0
+          cache: true
+      - run: pixi run sync collection-ionic.yaml
+      - run: pixi run build
