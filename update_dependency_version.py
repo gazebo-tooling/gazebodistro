@@ -27,7 +27,7 @@ to 'gz-cmake4' in all downstream libraries that use gz-cmake.
         matching_repo = conf["repositories"].get(args.library)
         if matching_repo and matching_repo["version"] == args.from_version:
             matching_repo["version"] = args.to_version
-            new = yaml.dump(conf, sort_keys=False)
+            new = yaml.dump(conf, sort_keys=False, explicit_start=True)
             changes[file.name] = (old, new)
 
     print("The following change will be applied")
