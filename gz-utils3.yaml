@@ -1,9 +1,8 @@
----
 repositories:
   gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: main
+    version: gz-cmake4
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
