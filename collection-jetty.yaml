@@ -15,15 +15,15 @@ repositories:
   gz-sim:
     type: git
     url: https://github.com/gazebosim/gz-sim
-    version: gz-sim9
+    version: main
   gz-gui:
     type: git
     url: https://github.com/gazebosim/gz-gui
-    version: gz-gui9
+    version: main
   gz-launch:
     type: git
     url: https://github.com/gazebosim/gz-launch
-    version: gz-launch8
+    version: main
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
