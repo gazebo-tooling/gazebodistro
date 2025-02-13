@@ -3,7 +3,7 @@ repositories:
   gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake3
+    version: mergify/bp/gz-cmake3/pr-467
   gz-common:
     type: git
     url: https://github.com/gazebosim/gz-common
