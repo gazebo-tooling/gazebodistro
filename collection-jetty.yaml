@@ -15,15 +15,15 @@ repositories:
   gz-sim:
     type: git
     url: https://github.com/gazebosim/gz-sim
-    version: scpeters/package_name_without_major_version_gui
+    version: ci_matching_branch/bump_jetty_gz-sim10
   gz-gui:
     type: git
     url: https://github.com/gazebosim/gz-gui
-    version: scpeters/package_name_without_major_version_gui
+    version: ci_matching_branch/bump_jetty_gz-gui10
   gz-launch:
     type: git
     url: https://github.com/gazebosim/gz-launch
-    version: scpeters/package_name_without_major_version_gui
+    version: ci_matching_branch/bump_jetty_gz-launch9
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
@@ -47,7 +47,7 @@ repositories:
   gz-sensors:
     type: git
     url: https://github.com/gazebosim/gz-sensors
-    version: gz-sensors9
+    version: ci_matching_branch/bump_jetty_gz-sensors10
   gz-tools:
     type: git
     url: https://github.com/gazebosim/gz-tools
@@ -55,7 +55,7 @@ repositories:
   gz-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
-    version: gz-transport14
+    version: main
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
