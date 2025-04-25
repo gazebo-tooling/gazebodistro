@@ -2,8 +2,8 @@ name: Validate gazebodistro
 on: [push, pull_request]
 
 jobs:
-  nosetests:
-    name: Nosetests
+  pytest:
+    name: PyTest
     runs-on: ubuntu-24.04
     strategy:
       matrix:
@@ -22,11 +22,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         pip install PyYAML argparse
-        pip install nose coverage
+        pip install pytest pytest-cov
         pip install unidiff
         pip install PyGithub
-    - name: Run Nose Tests
-      run: nosetests -s
+    - name: Run PyTest
+      run: pytest -v
   yamllint:
     name: Yaml Linting
     runs-on: ubuntu-24.04
