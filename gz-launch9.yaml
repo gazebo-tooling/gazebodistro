@@ -3,15 +3,15 @@ repositories:
   gz-cmake:
     type: git
     url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake4
+    version: main
   gz-common:
     type: git
     url: https://github.com/gazebosim/gz-common
-    version: gz-common6
+    version: main
   gz-fuel-tools:
     type: git
     url: https://github.com/gazebosim/gz-fuel-tools
-    version: gz-fuel-tools10
+    version: main
   gz-sim:
     type: git
     url: https://github.com/gazebosim/gz-sim
@@ -27,23 +27,23 @@ repositories:
   gz-math:
     type: git
     url: https://github.com/gazebosim/gz-math
-    version: gz-math8
+    version: main
   gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
-    version: gz-msgs11
+    version: main
   gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
-    version: gz-physics8
+    version: main
   gz-plugin:
     type: git
     url: https://github.com/gazebosim/gz-plugin
-    version: gz-plugin3
+    version: main
   gz-rendering:
     type: git
     url: https://github.com/gazebosim/gz-rendering
-    version: gz-rendering9
+    version: main
   gz-sensors:
     type: git
     url: https://github.com/gazebosim/gz-sensors
@@ -59,8 +59,8 @@ repositories:
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
-    version: gz-utils3
+    version: main
   sdformat:
     type: git
     url: https://github.com/gazebosim/sdformat
-    version: sdf15
+    version: main
