@@ -19,7 +19,7 @@ repositories:
   gz-rendering:
     type: git
     url: https://github.com/gazebosim/gz-rendering
-    version: main
+    version: gz-rendering10
   gz-utils:
     type: git
     url: https://github.com/gazebosim/gz-utils
