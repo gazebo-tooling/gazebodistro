@@ -31,7 +31,7 @@ repositories:
   gz-msgs:
     type: git
     url: https://github.com/gazebosim/gz-msgs
-    version: main
+    version: gz-msgs12
   gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
