@@ -1,0 +1,41 @@
+repositories:
+  gz-cmake:
+    type: git
+    url: https://github.com/gazebosim/gz-cmake
+    version: gz-cmake5
+  gz-common:
+    type: git
+    url: https://github.com/gazebosim/gz-common
+    version: gz-common7
+  gz-gui:
+    type: git
+    url: https://github.com/gazebosim/gz-gui
+    version: main
+  gz-math:
+    type: git
+    url: https://github.com/gazebosim/gz-math
+    version: gz-math9
+  gz-msgs:
+    type: git
+    url: https://github.com/gazebosim/gz-msgs
+    version: gz-msgs12
+  gz-plugin:
+    type: git
+    url: https://github.com/gazebosim/gz-plugin
+    version: gz-plugin4
+  gz-rendering:
+    type: git
+    url: https://github.com/gazebosim/gz-rendering
+    version: gz-rendering10
+  gz-tools:
+    type: git
+    url: https://github.com/gazebosim/gz-tools
+    version: gz-tools2
+  gz-transport:
+    type: git
+    url: https://github.com/gazebosim/gz-transport
+    version: gz-transport15
+  gz-utils:
+    type: git
+    url: https://github.com/gazebosim/gz-utils
+    version: gz-utils4
