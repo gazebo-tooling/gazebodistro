@@ -6,8 +6,8 @@ repositories:
     version: gz-cmake5
   gz-common:
     type: git
-    url: https://github.com/gazebosim/gz-common
-    version: gz-common7
+    url: https://github.com/wentasah/gz-common
+    version: replace-freeimage-gz7
   gz-fuel-tools:
     type: git
     url: https://github.com/gazebosim/gz-fuel-tools
