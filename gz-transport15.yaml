@@ -1,26 +1,13 @@
 ---
+extends:
+  - gz-tools2.yaml
+  - gz-utils4.yaml
+  - gz-msgs12.yaml
+  - gz-math9.yaml
+  - gz-cmake5.yaml
+
 repositories:
-  gz-cmake:
-    type: git
-    url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake5
-  gz-math:
-    type: git
-    url: https://github.com/gazebosim/gz-math
-    version: gz-math9
-  gz-msgs:
-    type: git
-    url: https://github.com/gazebosim/gz-msgs
-    version: gz-msgs12
-  gz-tools:
-    type: git
-    url: https://github.com/gazebosim/gz-tools
-    version: gz-tools2
   gz-transport:
     type: git
     url: https://github.com/gazebosim/gz-transport
     version: gz-transport15
-  gz-utils:
-    type: git
-    url: https://github.com/gazebosim/gz-utils
-    version: gz-utils4

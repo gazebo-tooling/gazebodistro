@@ -1,30 +1,14 @@
 ---
+extends:
+  - gz-common7.yaml
+  - sdformat16.yaml
+  - gz-plugin4.yaml
+  - gz-utils4.yaml
+  - gz-math9.yaml
+  - gz-cmake5.yaml
+
 repositories:
-  gz-cmake:
-    type: git
-    url: https://github.com/gazebosim/gz-cmake
-    version: gz-cmake5
-  gz-common:
-    type: git
-    url: https://github.com/gazebosim/gz-common
-    version: gz-common7
-  gz-math:
-    type: git
-    url: https://github.com/gazebosim/gz-math
-    version: gz-math9
   gz-physics:
     type: git
     url: https://github.com/gazebosim/gz-physics
     version: gz-physics9
-  gz-plugin:
-    type: git
-    url: https://github.com/gazebosim/gz-plugin
-    version: gz-plugin4
-  gz-utils:
-    type: git
-    url: https://github.com/gazebosim/gz-utils
-    version: gz-utils4
-  sdformat:
-    type: git
-    url: https://github.com/gazebosim/sdformat
-    version: sdf16
