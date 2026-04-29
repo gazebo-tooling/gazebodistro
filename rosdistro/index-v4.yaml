@@ -1,0 +1,11 @@
+%YAML 1.1
+# Gazebo rosdistro index — experimental, used to feed rotary into ros_buildfarm
+---
+type: index
+version: 4
+distributions:
+  rotary:
+    distribution: [rotary/distribution.yaml]
+    distribution_status: rolling
+    distribution_type: ros2
+    python_version: 3
