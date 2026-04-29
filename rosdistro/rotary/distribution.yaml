@@ -1,0 +1,56 @@
+%YAML 1.1
+# Gazebo rotary distribution — packages built from main branches.
+# Mirrors collection-rotary.yaml (vcstool format). Source-only entries:
+# no release: block (no bloom repos for main), no doc: block (out of scope).
+---
+release_platforms:
+  ubuntu:
+  - noble
+repositories:
+  gz-cmake:
+    source: { type: git, url: https://github.com/gazebosim/gz-cmake, version: main }
+    status: developed
+  gz-common:
+    source: { type: git, url: https://github.com/gazebosim/gz-common, version: main }
+    status: developed
+  gz-fuel-tools:
+    source: { type: git, url: https://github.com/gazebosim/gz-fuel-tools, version: main }
+    status: developed
+  gz-gui:
+    source: { type: git, url: https://github.com/gazebosim/gz-gui, version: main }
+    status: developed
+  gz-math:
+    source: { type: git, url: https://github.com/gazebosim/gz-math, version: main }
+    status: developed
+  gz-msgs:
+    source: { type: git, url: https://github.com/gazebosim/gz-msgs, version: main }
+    status: developed
+  gz-physics:
+    source: { type: git, url: https://github.com/gazebosim/gz-physics, version: main }
+    status: developed
+  gz-plugin:
+    source: { type: git, url: https://github.com/gazebosim/gz-plugin, version: main }
+    status: developed
+  gz-rendering:
+    source: { type: git, url: https://github.com/gazebosim/gz-rendering, version: main }
+    status: developed
+  gz-sensors:
+    source: { type: git, url: https://github.com/gazebosim/gz-sensors, version: main }
+    status: developed
+  gz-sim:
+    source: { type: git, url: https://github.com/gazebosim/gz-sim, version: main }
+    status: developed
+  gz-tools:
+    source: { type: git, url: https://github.com/gazebosim/gz-tools, version: main }
+    status: developed
+  gz-transport:
+    source: { type: git, url: https://github.com/gazebosim/gz-transport, version: main }
+    status: developed
+  gz-utils:
+    source: { type: git, url: https://github.com/gazebosim/gz-utils, version: main }
+    status: developed
+  sdformat:
+    source: { type: git, url: https://github.com/gazebosim/sdformat, version: main }
+    status: developed
+type: distribution
+version: 2
