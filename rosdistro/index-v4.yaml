@@ -1,5 +1,9 @@
 %YAML 1.1
 # Gazebo rosdistro index — experimental, used to feed rotary into ros_buildfarm
+# see REP 143: http://ros.org/reps/rep-0143.html
+# Canonical URL (the value a ROS distribution `extends` entry would point to,
+# valid once this file is merged to master):
+# https://raw.githubusercontent.com/gazebo-tooling/gazebodistro/master/rosdistro/index-v4.yaml
 ---
 type: index
 version: 4
@@ -7,5 +11,10 @@ distributions:
   rotary:
     distribution: [rotary/distribution.yaml]
     distribution_status: rolling
+    # distribution_type is semantically wrong for Gazebo: REP 153 only defines
+    # ros1/ros2, and ros2 makes ros_buildfarm apply ROS 2 semantics (e.g. it
+    # injects a ros_workspace dependency that does not exist for rotary).
+    # Kept as ros2 for tool compatibility until REP 2015 (rosdistro
+    # extensions) defines a value for non-ROS distributions.
     distribution_type: ros2
     python_version: 3

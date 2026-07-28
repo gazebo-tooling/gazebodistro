@@ -44,4 +44,4 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install yamllint
     - name: Run yamllint
-      run: yamllint *.yaml
+      run: yamllint *.yaml rosdistro/
