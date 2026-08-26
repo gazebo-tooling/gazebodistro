@@ -22,6 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         pip install PyYAML argparse
+        pip install 'rosdistro==1.0.1' catkin_pkg
         pip install pytest pytest-cov
         pip install unidiff
         pip install PyGithub
@@ -44,4 +45,31 @@ jobs:
         python -m pip install --upgrade pip setuptools wheel
         pip install yamllint
     - name: Run yamllint
-      run: yamllint *.yaml
+      run: yamllint *.yaml rosdistro/
+  cache-freshness:
+    name: Distribution cache is up to date
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.12'
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install 'rosdistro==1.0.1' PyYAML catkin_pkg
+    # --preclean discards the committed cache and rebuilds every entry from
+    # the git tags, so a tags.release prefix naming a tag that does not exist
+    # fails here instead of being papered over by the stale cached entry.
+    - name: Rebuild the cache
+      working-directory: rosdistro
+      run: python3 -m rosdistro.cli.rosdistro_build_cache --preclean index-v4.yaml jetty
+    # Only the plain YAML is compared. gzip embeds an mtime, so the .gz bytes
+    # differ on every run even when the content is identical.
+    - name: Fail if the committed cache is stale
+      run: |
+        git diff --exit-code -- rosdistro/jetty-cache.yaml \
+          || { echo "::error::rosdistro/jetty-cache.yaml is stale. Regenerate it:"; \
+               echo "::error::  cd rosdistro && python3 -m rosdistro.cli.rosdistro_build_cache --preclean index-v4.yaml jetty"; \
+               exit 1; }

@@ -120,6 +120,21 @@ def isolate_yaml_snippets_from_line_numbers(yaml_dict, line_numbers):
             changed_repos[match['repo']] = match
     return changed_repos
 
+def should_check_path(path):
+    """Return True if a changed file should have its branch references checked.
+
+    Only the root-level vcstool collection and library files have the flat
+    {repositories: {name: {url, version}}} shape that main() parses.
+    """
+    if not path.endswith('.yaml'):
+        return False
+    if path.find('.github') >= 0:
+        return False
+    if path.startswith('rosdistro/'):
+        return False
+    return True
+
+
 def main():
     detected_errors = []
 
@@ -150,12 +165,7 @@ def main():
     diffed_lines = detect_lines(diff)
 
     for path, lines in diffed_lines.items():
-        # Skip anything that isn't YAML
-        if path.find('.yaml') < 0:
-            continue
-
-        # Skip anything in the github subdirectory
-        if path.find('.github') >= 0:
+        if not should_check_path(path):
             continue
 
         directory = os.path.join(os.path.dirname(__file__), '..')
@@ -173,6 +183,42 @@ def main():
                 val = f"::error file={path},line={line},title=Invalid Repo::{message}"
                 detected_errors.extend([val])
     return detected_errors
+
+
+class TestShouldCheckPath(unittest.TestCase):
+    """Only root-level vcstool collection files have the shape this test parses.
+
+    Files under rosdistro/ are REP-143 distribution files, a REP-153 index and
+    generated caches. None of them expose {repositories: {name: {url, version}}},
+    so feeding them to the branch check raises KeyError.
+    """
+
+    def test_collection_files_are_checked(self):
+        self.assertTrue(should_check_path('collection-jetty.yaml'))
+        self.assertTrue(should_check_path('gz-sim10.yaml'))
+
+    def test_non_yaml_is_skipped(self):
+        self.assertFalse(should_check_path('README.md'))
+
+    def test_github_dir_is_skipped(self):
+        self.assertFalse(should_check_path('.github/workflows/lint.yaml'))
+
+    def test_rosdistro_index_is_skipped(self):
+        self.assertFalse(should_check_path('rosdistro/index-v4.yaml'))
+
+    def test_rosdistro_distribution_is_skipped(self):
+        self.assertFalse(should_check_path('rosdistro/jetty/distribution.yaml'))
+
+    def test_rosdistro_cache_is_skipped(self):
+        self.assertFalse(should_check_path('rosdistro/jetty-cache.yaml'))
+
+    def test_yamllint_config_is_skipped(self):
+        # Regression: '.yamllint' contains the substring '.yaml' but is not a
+        # collection file, so it must not be handed to the branch checker.
+        self.assertFalse(should_check_path('.yamllint'))
+
+    def test_compressed_cache_is_skipped(self):
+        self.assertFalse(should_check_path('rosdistro/jetty-cache.yaml.gz'))
 
 
 class TestUrlValidity(unittest.TestCase):

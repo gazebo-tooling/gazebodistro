@@ -23,6 +23,12 @@ pip install PyYAML argparse nose coverage unidiff PyGithub
 nosetests -s
 ```
 
+## rosdistro index
+
+`rosdistro/` additionally publishes Gazebo releases as a REP-143 distribution
+file and REP-153 index, so ROS tooling can consume Gazebo directly. See
+[rosdistro/README.md](rosdistro/README.md).
+
 
 
 

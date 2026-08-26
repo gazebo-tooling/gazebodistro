@@ -1,0 +1,204 @@
+%YAML 1.1
+# Gazebo Jetty distribution file - see REP 143
+# http://ros.org/reps/rep-0143.html
+#
+# source.version is the stable branch; release.version is the exact Debian
+# version shipped on packages.osrfoundation.org for Ubuntu Noble.
+---
+type: distribution
+version: 2
+release_platforms:
+  ubuntu:
+    - noble
+repositories:
+  gz-cmake:
+    release:
+      tags:
+        release: gz-cmake5_{upstream_version}
+      url: https://github.com/gazebosim/gz-cmake.git
+      version: 5.1.1-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-cmake
+      version: gz-cmake5
+    status: maintained
+  gz-common:
+    release:
+      tags:
+        release: gz-common7_{upstream_version}
+      url: https://github.com/gazebosim/gz-common.git
+      version: 7.4.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-common
+      version: gz-common7
+    status: maintained
+  gz-fuel-tools:
+    release:
+      packages:
+        - gz-fuel_tools
+      tags:
+        release: gz-fuel-tools11_{upstream_version}
+      url: https://github.com/gazebosim/gz-fuel-tools.git
+      version: 11.0.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-fuel-tools
+      version: gz-fuel-tools11
+    status: maintained
+  gz-gui:
+    release:
+      tags:
+        release: gz-gui10_{upstream_version}
+      url: https://github.com/gazebosim/gz-gui.git
+      version: 10.1.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-gui
+      version: gz-gui10
+    status: maintained
+  gz-jetty:
+    release:
+      tags:
+        release: gz-jetty_{upstream_version}
+      url: https://github.com/gazebosim/gz-jetty.git
+      version: 1.0.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-jetty
+      version: main
+    status: maintained
+  gz-launch:
+    release:
+      tags:
+        release: gz-launch9_{upstream_version}
+      url: https://github.com/gazebosim/gz-launch.git
+      version: 9.0.1-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-launch
+      version: gz-launch9
+    status: maintained
+  gz-math:
+    release:
+      tags:
+        release: gz-math9_{upstream_version}
+      url: https://github.com/gazebosim/gz-math.git
+      version: 9.3.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-math
+      version: gz-math9
+    status: maintained
+  gz-msgs:
+    release:
+      tags:
+        release: gz-msgs12_{upstream_version}
+      url: https://github.com/gazebosim/gz-msgs.git
+      version: 12.0.2-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-msgs
+      version: gz-msgs12
+    status: maintained
+  gz-physics:
+    release:
+      tags:
+        release: gz-physics9_{upstream_version}
+      url: https://github.com/gazebosim/gz-physics.git
+      version: 9.5.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-physics
+      version: gz-physics9
+    status: maintained
+  gz-plugin:
+    release:
+      tags:
+        release: gz-plugin4_{upstream_version}
+      url: https://github.com/gazebosim/gz-plugin.git
+      version: 4.0.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-plugin
+      version: gz-plugin4
+    status: maintained
+  gz-rendering:
+    release:
+      tags:
+        release: gz-rendering10_{upstream_version}
+      url: https://github.com/gazebosim/gz-rendering.git
+      version: 10.0.2-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-rendering
+      version: gz-rendering10
+    status: maintained
+  gz-sensors:
+    release:
+      tags:
+        release: gz-sensors10_{upstream_version}
+      url: https://github.com/gazebosim/gz-sensors.git
+      version: 10.1.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-sensors
+      version: gz-sensors10
+    status: maintained
+  gz-sim:
+    release:
+      tags:
+        release: gz-sim10_{upstream_version}
+      url: https://github.com/gazebosim/gz-sim.git
+      version: 10.5.0-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-sim
+      version: gz-sim10
+    status: maintained
+  gz-tools:
+    release:
+      packages:
+        - gz-tools2
+      tags:
+        release: gz-tools2_{upstream_version}
+      url: https://github.com/gazebosim/gz-tools.git
+      version: 2.0.4-1
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-tools
+      version: gz-tools2
+    status: maintained
+  gz-transport:
+    release:
+      tags:
+        release: gz-transport15_{upstream_version}
+      url: https://github.com/gazebosim/gz-transport.git
+      version: 15.1.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-transport
+      version: gz-transport15
+    status: maintained
+  gz-utils:
+    release:
+      tags:
+        release: gz-utils4_{upstream_version}
+      url: https://github.com/gazebosim/gz-utils.git
+      version: 4.0.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/gz-utils
+      version: gz-utils4
+    status: maintained
+  sdformat:
+    release:
+      tags:
+        release: sdformat16_{upstream_version}
+      url: https://github.com/gazebosim/sdformat.git
+      version: 16.1.0-2
+    source:
+      type: git
+      url: https://github.com/gazebosim/sdformat
+      version: sdf16
+    status: maintained

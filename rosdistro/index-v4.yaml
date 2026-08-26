@@ -1,0 +1,27 @@
+%YAML 1.1
+# Gazebo rosdistro index - see REP 143 and REP 153
+# http://ros.org/reps/rep-0143.html
+#
+# Canonical URL once merged to master, and the value consumers point at:
+# https://raw.githubusercontent.com/gazebo-tooling/gazebodistro/master/rosdistro/index-v4.yaml
+---
+type: index
+version: 4
+distributions:
+  jetty:
+    distribution:
+      - jetty/distribution.yaml
+    # Regenerate with, from the rosdistro/ directory:
+    #   python3 -m rosdistro.cli.rosdistro_build_cache --preclean \
+    #     index-v4.yaml jetty
+    # Both jetty-cache.yaml and jetty-cache.yaml.gz are committed. CI
+    # rebuilds the plain file and fails if it drifts from the distribution
+    # file; the test suite fails if the .gz does not decompress to it.
+    distribution_cache: jetty-cache.yaml.gz
+    distribution_status: active
+    # REP 153 defines only ros1 and ros2, neither of which describes Gazebo,
+    # and no value for a non-ROS distribution exists. ros2 is kept for tool
+    # compatibility; it makes ros_buildfarm apply ROS 2 semantics such as
+    # injecting a ros_workspace dependency that does not exist here.
+    distribution_type: ros2
+    python_version: 3
