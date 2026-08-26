@@ -10,6 +10,11 @@ version: 4
 distributions:
   rotary:
     distribution: [rotary/distribution.yaml]
+    # Generated locally by rosdistro-local/build_distribution_cache.py and
+    # NOT committed (see .gitignore): rotary has no bloom-style release tags
+    # yet, so the cache is built from the main-branch package.xml files.
+    # Replace with a hosted URL before publishing this index.
+    distribution_cache: rotary-cache.yaml.gz
     distribution_status: rolling
     # distribution_type is semantically wrong for Gazebo: REP 153 only defines
     # ros1/ros2, and ros2 makes ros_buildfarm apply ROS 2 semantics (e.g. it

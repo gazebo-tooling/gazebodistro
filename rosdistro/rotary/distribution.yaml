@@ -2,98 +2,183 @@
 # Gazebo rotary distribution — packages built from main branches.
 # see REP 143: http://ros.org/reps/rep-0143.html
 # Mirrors collection-rotary.yaml (vcstool format); kept in sync by
-# test/test_rosdistro_consistency.py. Source-only entries: no release: block
-# (no bloom repos for main branches), no doc: block (out of scope).
+# test/test_rosdistro_consistency.py.
+# release: blocks are EXPERIMENTAL: they point at the (existing)
+# gazebo-release/gz-rotary-*-release repositories using the future
+# bloom-style tag scheme, but those tags do not exist yet. The version
+# 99.99.99-1 mirrors the nightly-from-main convention. The distribution
+# cache referenced from index-v4.yaml is generated from the main-branch
+# package.xml files by rosdistro-local/build_distribution_cache.py.
+# No doc: block (out of scope).
 ---
 release_platforms:
   ubuntu:
     - noble
 repositories:
   gz-cmake:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-cmake-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-cmake
       version: main
     status: developed
   gz-common:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-common-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-common
       version: main
     status: developed
   gz-fuel-tools:
+    release:
+      # package.xml on main is named gz-fuel_tools (underscore), unlike the
+      # repository and every other gz package which use dashes throughout
+      packages:
+        - gz-fuel_tools
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-fuel-tools-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-fuel-tools
       version: main
     status: developed
   gz-gui:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-gui-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-gui
       version: main
     status: developed
   gz-math:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-math-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-math
       version: main
     status: developed
   gz-msgs:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-msgs-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-msgs
       version: main
     status: developed
   gz-physics:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-physics-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-physics
       version: main
     status: developed
   gz-plugin:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-plugin-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-plugin
       version: main
     status: developed
   gz-rendering:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-rendering-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-rendering
       version: main
     status: developed
   gz-sensors:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-sensors-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-sensors
       version: main
     status: developed
   gz-sim:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-sim-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-sim
       version: main
     status: developed
   gz-tools:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-tools-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-tools
       version: main
     status: developed
   gz-transport:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-transport-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-transport
       version: main
     status: developed
   gz-utils:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-utils-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-utils
       version: main
     status: developed
   sdformat:
+    release:
+      tags:
+        release: release/rotary/{package}/{version}
+      url: https://github.com/gazebo-release/gz-rotary-sdformat-release.git
+      version: 99.99.99-1
     source:
       type: git
       url: https://github.com/gazebosim/sdformat
