@@ -37,6 +37,8 @@ regular CI job stays green. Reads only committed files; no network.
 import gzip
 import os
 import unittest
+import urllib.error
+import urllib.request
 
 import yaml
 from rosdistro import get_cached_distribution, get_index
@@ -124,6 +126,28 @@ class TestLyricalExtendsJetty(unittest.TestCase):
             plain = f.read()
         with gzip.open(base + '.gz', 'rb') as f:
             self.assertEqual(plain, f.read())
+
+
+class TestLyricalCacheMatchesPinnedFile(unittest.TestCase):
+    """The cache is what create_workspace.py reads; rosdep fetches the pinned
+    file live. Both must describe the same lyrical, or a SHA bump without a
+    cache rebuild would go unnoticed."""
+
+    def test_embedded_repositories_match_the_pinned_distribution_file(self):
+        with open(os.path.join(ROSDISTRO_DIR, 'index-v4.yaml')) as handle:
+            index = yaml.safe_load(handle)
+        [url] = index['distributions']['lyrical']['distribution']
+        try:
+            with urllib.request.urlopen(url, timeout=60) as response:
+                pinned = yaml.safe_load(response.read())
+        except (urllib.error.URLError, OSError) as exc:
+            self.skipTest('pinned distribution file unreachable: %s' % exc)
+        with open(os.path.join(ROSDISTRO_DIR, 'lyrical-cache.yaml')) as handle:
+            cache = yaml.safe_load(handle)
+        [embedded] = cache['distribution_file']
+        self.assertEqual(embedded['version'], 3)
+        self.assertEqual(embedded['extends'], pinned['extends'])
+        self.assertEqual(embedded['repositories'], pinned['repositories'])
 
 
 if __name__ == '__main__':
