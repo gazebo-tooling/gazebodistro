@@ -25,3 +25,15 @@ distributions:
     # injecting a ros_workspace dependency that does not exist here.
     distribution_type: ros2
     python_version: 3
+  # ROS 2 Lyrical extending Jetty (REP-2015 test). The distribution file is
+  # the KmoM88 fork of ros/rosdistro pinned to a commit; bump the SHA to pick
+  # up newer lyrical content, then rebuild lyrical-cache.yaml.gz (see
+  # README.md). The cache is built from the official lyrical cache plus this
+  # version-3 file so that consumers merge jetty in through the cache path.
+  lyrical:
+    distribution:
+      - https://raw.githubusercontent.com/KmoM88/ros-rosdistro/1fed7036e3b0/lyrical/distribution.yaml  # yamllint disable-line rule:line-length
+    distribution_cache: lyrical-cache.yaml.gz
+    distribution_status: active
+    distribution_type: ros2
+    python_version: 3

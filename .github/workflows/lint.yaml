@@ -73,3 +73,20 @@ jobs:
           || { echo "::error::rosdistro/jetty-cache.yaml is stale. Regenerate it:"; \
                echo "::error::  cd rosdistro && python3 -m rosdistro.cli.rosdistro_build_cache --preclean index-v4.yaml jetty"; \
                exit 1; }
+  rep2015-extension:
+    name: Lyrical extends Jetty through the caches (REP-2015)
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.12'
+    # The stock rosdistro rejects distribution file version 3, so this job
+    # installs the fork that implements the REP-2015 `extends` element.
+    - name: Install the rosdistro fork
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install 'rosdistro @ git+https://github.com/KmoM88/rosdistro@436f5429fc1e' PyYAML catkin_pkg pytest
+    - name: Run the extension tests
+      run: pytest -v test/test_rosdistro_extension.py

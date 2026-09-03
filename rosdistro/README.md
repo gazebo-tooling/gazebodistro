@@ -12,6 +12,8 @@ the format ROS tooling understands.
 | `jetty/distribution.yaml` | Gazebo Jetty: every repository in the collection plus the `gz-jetty` metapackage, pinned to shipped versions. |
 | `jetty-cache.yaml` | Generated cache. The reviewable, diffable copy. |
 | `jetty-cache.yaml.gz` | Generated cache. What `index-v4.yaml` points at. |
+| `lyrical-cache.yaml` | Generated cache for ROS 2 Lyrical extending Jetty (REP-2015 test). Reviewable copy. |
+| `lyrical-cache.yaml.gz` | Same, what `index-v4.yaml` points at. |
 
 ## Using it
 
@@ -24,12 +26,34 @@ distribution = get_cached_distribution(index, 'jetty')
 print(sorted(distribution.release_packages))
 ```
 
-How a ROS distribution would consume this is an open question. No accepted REP
-defines a mechanism for one distribution to extend another, and `rosdistro`
-implements none today. What is settled is the format: this is a plain REP-143
-distribution file behind a REP-153 index, so anything reading it through the
-API above works as it stands, and any mechanism agreed on later has a standard
-index to point at.
+## Lyrical extends Jetty (REP-2015 test)
+
+`index-v4.yaml` also lists `lyrical`, whose distribution file is the
+[KmoM88 fork of ros/rosdistro](https://github.com/KmoM88/ros-rosdistro/tree/feature/rep-2015-jetty-extension)
+pinned to a commit. That file is REP-2015 distribution version 3 and carries
+`extends: [{distro_name: jetty, extension_method: source_rebuild}]`. Reading it
+needs the matching
+[rosdistro library fork](https://github.com/KmoM88/rosdistro/tree/feature/rep-2015-v3-parser);
+the stock library rejects version 3.
+
+The fork merges the parent through the cache path only when the child's
+cache embeds a version-3 distribution file, and it looks for the parent in
+the same index. Both caches therefore live here, and `lyrical-cache.yaml.gz`
+is rebuilt from the official lyrical cache plus the pinned file:
+
+```bash
+cd rosdistro
+uv venv .venv-fork && uv pip install --python .venv-fork/bin/python \
+    'rosdistro @ git+https://github.com/KmoM88/rosdistro@436f5429fc1e' PyYAML catkin_pkg
+curl -sSL http://repo.ros2.org/rosdistro_cache/lyrical-cache.yaml.gz -o lyrical-cache.yaml.gz
+.venv-fork/bin/python -m rosdistro.cli.rosdistro_build_cache index-v4.yaml lyrical
+```
+
+Seeding from the official cache means only manifests whose release entry
+differs between the pinned fork file and the seed are refetched (116
+non-Gazebo packages on 2026-09-03); the embedded distribution file is
+replaced. `test/test_rosdistro_extension.py` checks the result and is
+skipped under the stock library.
 
 ## Regenerating the cache
 
@@ -74,6 +98,6 @@ assertion failure in the test suite.
   changes once releases are bloomed.
 - `gz-fuel-tools` and `gz-tools` need an explicit `packages:` list — their
   package names are `gz-fuel_tools` and `gz-tools2`.
-- `release_platforms` lists `noble` only. Jetty is present in the `resolute` apt
-  dist but incomplete there: the rendering, GUI, sensors, sim and launch
-  packages have not been built yet.
+- `release_platforms` lists `noble` and `resolute`. Every Jetty package is
+  published for both; `release.version` tracks noble, and resolute's Debian
+  revisions may differ.
