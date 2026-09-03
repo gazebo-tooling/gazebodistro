@@ -7,9 +7,12 @@
 ---
 type: distribution
 version: 2
+# release.version is the noble Debian version. resolute ships the same set of
+# packages; its Debian revisions may differ and are not tracked here.
 release_platforms:
   ubuntu:
     - noble
+    - resolute
 repositories:
   gz-cmake:
     release:
@@ -51,7 +54,7 @@ repositories:
       tags:
         release: gz-gui10_{upstream_version}
       url: https://github.com/gazebosim/gz-gui.git
-      version: 10.1.0-1
+      version: 10.1.0-2
     source:
       type: git
       url: https://github.com/gazebosim/gz-gui
@@ -73,7 +76,7 @@ repositories:
       tags:
         release: gz-launch9_{upstream_version}
       url: https://github.com/gazebosim/gz-launch.git
-      version: 9.0.1-1
+      version: 9.0.1-2
     source:
       type: git
       url: https://github.com/gazebosim/gz-launch
@@ -106,7 +109,7 @@ repositories:
       tags:
         release: gz-physics9_{upstream_version}
       url: https://github.com/gazebosim/gz-physics.git
-      version: 9.5.0-1
+      version: 9.5.1-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-physics
@@ -128,7 +131,7 @@ repositories:
       tags:
         release: gz-rendering10_{upstream_version}
       url: https://github.com/gazebosim/gz-rendering.git
-      version: 10.0.2-2
+      version: 10.0.2-3
     source:
       type: git
       url: https://github.com/gazebosim/gz-rendering
@@ -139,7 +142,7 @@ repositories:
       tags:
         release: gz-sensors10_{upstream_version}
       url: https://github.com/gazebosim/gz-sensors.git
-      version: 10.1.0-1
+      version: 10.1.1-1
     source:
       type: git
       url: https://github.com/gazebosim/gz-sensors
@@ -150,7 +153,7 @@ repositories:
       tags:
         release: gz-sim10_{upstream_version}
       url: https://github.com/gazebosim/gz-sim.git
-      version: 10.5.0-1
+      version: 10.5.0-2
     source:
       type: git
       url: https://github.com/gazebosim/gz-sim

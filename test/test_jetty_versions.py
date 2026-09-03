@@ -45,9 +45,12 @@ import yaml
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST_PATH = os.path.join(REPO_ROOT, 'rosdistro', 'jetty', 'distribution.yaml')
 
-PACKAGES_URL = (
-    'https://packages.osrfoundation.org/gazebo/ubuntu-stable/dists/noble/'
+PACKAGES_URL_TEMPLATE = (
+    'https://packages.osrfoundation.org/gazebo/ubuntu-stable/dists/{codename}/'
     'main/binary-amd64/Packages.gz')
+
+# Ubuntu codenames the distribution file must list under release_platforms.
+CODENAMES = ('noble', 'resolute')
 
 # distribution.yaml repository name -> binary package name in the apt repository
 APT_PACKAGE = {
@@ -71,13 +74,14 @@ APT_PACKAGE = {
 }
 
 
-def fetch_noble_versions():
-    """Return {binary package name: version} from the noble Packages index.
+def fetch_versions(codename):
+    """Return {binary package name: version} from one codename's Packages index.
 
-    The trailing '~noble' suffix is stripped so the value is comparable with
-    release.version in the distribution file.
+    The trailing '~<codename>' suffix is stripped so the value is comparable
+    with release.version in the distribution file.
     """
-    with urllib.request.urlopen(PACKAGES_URL, timeout=60) as response:
+    url = PACKAGES_URL_TEMPLATE.format(codename=codename)
+    with urllib.request.urlopen(url, timeout=60) as response:
         raw = gzip.GzipFile(fileobj=io.BytesIO(response.read())).read()
     versions = {}
     name = None
@@ -91,17 +95,25 @@ def fetch_noble_versions():
     return versions
 
 
+def fetch_noble_versions():
+    return fetch_versions('noble')
+
+
+def _load_distribution():
+    with open(DIST_PATH) as f:
+        return yaml.safe_load(f)
+
+
 class TestJettyVersionsMatchApt(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         try:
-            cls.apt_versions = fetch_noble_versions()
+            cls.apt_versions = fetch_versions('noble')
         except (urllib.error.URLError, OSError) as exc:
             raise unittest.SkipTest(
                 'packages.osrfoundation.org unreachable: %s' % exc)
-        with open(DIST_PATH) as f:
-            cls.repositories = yaml.safe_load(f)['repositories']
+        cls.repositories = _load_distribution()['repositories']
 
     def test_every_repository_has_a_release_version(self):
         for repo in sorted(self.repositories):
@@ -134,6 +146,36 @@ class TestJettyVersionsMatchApt(unittest.TestCase):
                 '{upstream_version}', tag,
                 '%s release tag %r must use {upstream_version}, not {version}'
                 % (repo, tag))
+
+
+class TestJettyReleasedOnResolute(unittest.TestCase):
+    """Resolute is a release platform, so every package must be published there.
+
+    Only presence is checked. Debian revisions on resolute differ from noble
+    (gz-sensors and gz-utils did on 2026-09-03), and REP-143 has a single
+    release.version per repository, which this file keys to noble.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        try:
+            cls.apt_versions = fetch_versions('resolute')
+        except (urllib.error.URLError, OSError) as exc:
+            raise unittest.SkipTest(
+                'packages.osrfoundation.org unreachable: %s' % exc)
+
+    def test_every_package_is_published_on_resolute(self):
+        for repo, apt_name in sorted(APT_PACKAGE.items()):
+            self.assertIn(
+                apt_name, self.apt_versions,
+                '%s (%s) is not in the resolute Packages index' % (repo, apt_name))
+
+
+class TestReleasePlatforms(unittest.TestCase):
+
+    def test_release_platforms_list_every_known_codename(self):
+        platforms = _load_distribution()['release_platforms']
+        self.assertEqual(sorted(CODENAMES), sorted(platforms['ubuntu']))
 
 
 if __name__ == '__main__':
